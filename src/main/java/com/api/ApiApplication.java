@@ -15,13 +15,10 @@ public class ApiApplication {
     	ApplicationContext applicationContext = SpringApplication.run(ApiApplication.class, args);
        
         Person person1 = applicationContext.getBean(Person.class);
-        Person person2 = applicationContext.getBean(Person.class);
-   
-       LOGGER.info("{}",person1);
-       LOGGER.info("{}",person1.getPersondao());
-       LOGGER.info("{}",person2);
-       LOGGER.info("{}",person2.getPersondao());
-    
+        String name = person1.printName();
+        LOGGER.info("{}",name);
+        LOGGER.info("{}",person1);
+
     }
    
 
