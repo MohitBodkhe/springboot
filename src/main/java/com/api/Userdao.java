@@ -5,12 +5,11 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("Person")
-public class Persondao implements Database {
+public class Userdao implements Database {
 
 	@Override
 	public String userName() {
-		return "mohit";
+		return "mohit Bodkhe";
 	}
 
 }
